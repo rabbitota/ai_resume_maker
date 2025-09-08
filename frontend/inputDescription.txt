@@ -1,0 +1,9 @@
+Input Description:
+"I am Abdur Rabbi Tota and a Java Developer with 5 years of experience in building scalable backend
+applications using Spring Boot and Microservices. I have dexpertise in MySQL
+PostSQL, and MongoDB. I am proficient in AWS and Docker for cloud deployments.
+I have worked at ABC Tech as a Software Engineer and at XYZ Solutions as a 
+Senior Software Developer. I hold a Bachelor's degree in Computer Science.
+I have built an Expense Management System using Spring Boot and React.js.
+I am AWS Certified Solutions Architect and passionate about open-source contributions."
+
