@@ -34,10 +34,13 @@ function Navbar() {
             <li>
               <Link to={"/contact"}>Contact Us</Link>
             </li>
+            <li>
+              <Link to={"/feature"}>Feature</Link>
+            </li>
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl">
-          AI Resume Maker
+          <h1 className="text-2xl font-bold text-indigo-600">AI Resume Maker</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -51,10 +54,13 @@ function Navbar() {
           <li>
             <Link to={"/contact"}>Contact Us</Link>
           </li>
+          <li>
+            <Link to={"/feature"}>Feature</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <Link className="btn" to={"/login"}>Login</Link>
       </div>
     </div>
   );

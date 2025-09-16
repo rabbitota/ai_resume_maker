@@ -71,4 +71,12 @@ o	Open a pull request
 Have questions or suggestions? Feel free to reach out via GitHub Issues or Pull Requests.
 Let me know if you'd like me to tailor any sections further—like adding your GitHub username, a live link, or demo screenshots.
 
+<b> Must install:
+react-router-dom
+    command: npm install react-router-dom
+
+react-icons
+    command: npm install react-icons
+</b>
+
 </pre>
