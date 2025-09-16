@@ -116,6 +116,53 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
+
+            {/* Testimonial 3 */}
+            <div className="card bg-base-100 shadow-xl">
+              <div className="card-body">
+                <p>
+                  "Its remarkable to make the journy with a machine"
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="avatar">
+                    <div className="w-12 rounded-full">
+                      <img
+                        src="/deb.jpeg"
+                        alt="User"
+                      />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold">Debjyoti Das </h4>
+                    <p>Pharmacist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 4 */}
+            <div className="card bg-base-100 shadow-xl">
+              <div className="card-body">
+                <p>
+                  "This resume maker is awesome by functionality along with efficiency."
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="avatar">
+                    <div className="w-12 rounded-full">
+                      <img
+                        src="/obidul.jpeg"
+                        alt="User"
+                      />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold">Obidul Hasan</h4>
+                    <p>Cyber Security Expart</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

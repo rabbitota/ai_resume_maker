@@ -113,22 +113,26 @@ const GenerateResume = () => {
               onClick={() => fields.remove(index)}
               className="btn btn-error btn-sm mt-2"
             >
-              <FaTrash className="w-5 h-5 text-base-content" /> Remove {label}
+              <FaTrash className="w-fit h-5 text-base-content" /> Remove {label}
             </button>
           </div>
         ))}
-        <button
+
+          <div className="flex justify-center">
+            <button
           type="button"
           onClick={() =>
             fields.append(
               keys.reduce((acc, key) => ({ ...acc, [key]: "" }), {})
             )
           }
-          className="btn btn-secondary btn-sm mt-2 flex items-center"
-        >
-          <FaPlusCircle className="w-5 h-5 mr-1 text-base-content" /> Add{" "}
+          className="btn btn-accent w-fit btn-sm mt-2 flex items-center"
+          >
+          <FaPlusCircle className="w-fit h-5 mr-1 " /> Add{" "}
           {label}
         </button>
+          </div>
+
       </div>
     );
   };
@@ -208,9 +212,12 @@ const GenerateResume = () => {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary w-full">
-              Submit
-            </button>
+            <div className="flex justify-center">
+              <button type="submit" className="btn btn-primary w-1/4">
+                Submit
+              </button>
+            </div>
+
           </form>
         </div>
       </div>
@@ -270,6 +277,7 @@ const GenerateResume = () => {
           >
             Generate Another
           </div>
+
           <div
             onClick={() => {
               setShowPromptInput(false);
@@ -295,3 +303,5 @@ const GenerateResume = () => {
 };
 
 export default GenerateResume;
+
+//text-base-content

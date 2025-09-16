@@ -1,6 +1,7 @@
 import axios from "axios";
 
-export const baseURLL = "https://ai-resume-maker-2gwm.onrender.com";
+//export const baseURLL = "https://ai-resume-maker-2gwm.onrender.com";
+export const baseURLL = "http://localhost:8080";
 
 export const axiosInstance = axios.create({
   baseURL: baseURLL,

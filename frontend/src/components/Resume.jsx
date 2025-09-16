@@ -244,7 +244,7 @@ const Resume = ({ data }) => {
 
       <section className="flex justify-center mt-4 ">
         <div onClick={handleDownloadPdf} className="btn btn-primary">
-          Print
+          Download
         </div>
       </section>
     </>
