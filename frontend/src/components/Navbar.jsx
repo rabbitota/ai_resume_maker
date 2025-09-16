@@ -34,6 +34,9 @@ function Navbar() {
             <li>
               <Link to={"/contact"}>Contact Us</Link>
             </li>
+            <li>
+              <Link to={"/feature"}>Feature</Link>
+            </li>
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl">
@@ -51,10 +54,13 @@ function Navbar() {
           <li>
             <Link to={"/contact"}>Contact Us</Link>
           </li>
+          <li>
+            <Link to={"/feature"}>Feature</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <Link className="btn" to={"/login"}>Login</Link>
       </div>
     </div>
   );

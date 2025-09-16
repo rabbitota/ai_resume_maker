@@ -39,5 +39,11 @@ public class ResumeController {
         return "ResumeController is working!";
     }
 
+    @GetMapping("/submit")
+    public String FormSubmit() {
+
+        return "Form Submitted Successfully!";
+    }
+
 
 }
