@@ -40,7 +40,7 @@ function Navbar() {
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl">
-          AI Resume Maker
+          <h1 className="text-2xl font-bold text-indigo-600">AI Resume Maker</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
