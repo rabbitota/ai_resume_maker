@@ -1,6 +1,34 @@
+import axios from 'axios';
 import React from 'react';
+import axios from 'axios';
 
 function Register() {
+
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [confirmPassword, setConfirmPassword] = React.useState(""); 
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log({ name, email, password, confirmPassword });
+
+    // Reset form fields
+    try{
+      const response = await axios.post('http://localhost:8080/createUser', {
+        name : name,
+        email : email,
+        password : password
+      });
+      console.log(response.data);
+      alert("Registration Successful");
+    }catch(error){
+      console.error("There was an error!", error);
+      alert("Registration Failed");
+    }
+  }
+
   return (
     <div>
       <section className="bg-gray-50">
@@ -11,7 +39,7 @@ function Register() {
               <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Create an account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label
                     htmlFor="name"
@@ -27,7 +55,7 @@ function Register() {
                       focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
                       dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Your Name"
+                    placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)}
                     required
                   />
                 </div>
@@ -46,7 +74,7 @@ function Register() {
                       focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
                       dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="name@company.com"
+                    placeholder="name@company.com" value={email} onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -66,7 +94,7 @@ function Register() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
                       focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-                      dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={password} onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>
@@ -86,7 +114,7 @@ function Register() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
                       focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 
                       dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-                      dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}
                     required
                   />
                 </div>

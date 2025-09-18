@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity(name = "resume")
 @Table(name = "ResumeTable")
 @AllArgsConstructor
@@ -23,7 +26,7 @@ public class ResumeData {
     private String phone;
     private String education;
 
-    @OneToOne(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Long uid;
+    @ManyToOne
+    public UserTable userTable;
 }
 
