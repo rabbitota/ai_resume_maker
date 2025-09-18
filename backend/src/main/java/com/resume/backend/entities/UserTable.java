@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.aot.generate.Generated;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity(name = "user")
 @Table(name = "Users")
@@ -25,10 +28,8 @@ public class UserTable {
     private String email;
     private String phone;
 
-
-
-
-
+    @OneToMany(mappedBy = "userTable", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    public List<ResumeData> resumeData = new ArrayList<>();
 }
 
 
