@@ -62,41 +62,6 @@ function Login() {
               Sign in
             </button>
           </form>
-
-          {/* Divider */}
-          <div className="flex items-center my-6">
-            <hr className="flex-grow border-gray-700" />
-            <span className="px-3 text-gray-400 text-sm">Or continue with</span>
-            <hr className="flex-grow border-gray-700" />
-          </div>
-
-          {/* Social Buttons */}
-          <div className="flex gap-4">
-            <button className="w-1/2 flex items-center justify-center gap-2 py-2 bg-[#1e293b] rounded-md border border-gray-700 hover:bg-gray-800">
-              <img
-                src="https://www.svgrepo.com/show/475656/google-color.svg"
-                className="w-5 h-5"
-                alt="Google"
-              />
-              Google
-            </button>
-            <button className="w-1/2 flex items-center justify-center gap-2 py-2 bg-[#1e293b] rounded-md border border-gray-700 hover:bg-gray-800">
-              <img
-                src="https://www.svgrepo.com/show/475654/github-color.svg"
-                className="w-5 h-5"
-                alt="GitHub"
-              />
-              GitHub
-            </button>
-          </div>
-
-          {/* Footer */}
-          <p className="text-center text-sm text-gray-400 mt-6">
-            Not a member?{" "}
-            <a href="#" className="text-indigo-400 hover:underline">
-              Start a 14 day free trial
-            </a>
-          </p>
         </div>
       </div>
   )

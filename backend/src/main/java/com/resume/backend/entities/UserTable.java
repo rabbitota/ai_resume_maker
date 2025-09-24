@@ -27,6 +27,7 @@ public class UserTable {
     private String name;
     private String email;
     private String phone;
+    private String password;
 
     @OneToMany(mappedBy = "userTable", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     public List<ResumeData> resumeData = new ArrayList<>();
