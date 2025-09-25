@@ -58,7 +58,7 @@ function About() {
           <div className="mt-10 grid md:grid-cols-3 gap-8">
             <div className="bg-white shadow-md rounded-xl p-6">
 
-              <img src= ""
+              <img src= "/sakibul.jpg"
                 alt="Team member"
                 className="w-24 h-24 mx-auto rounded-full"
               />
@@ -68,20 +68,30 @@ function About() {
             </div>
             <div className="bg-white shadow-md rounded-xl p-6">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+                src="/tota.jpg"
                 alt="Team member"
                 className="w-24 h-24 mx-auto rounded-full"
               />
-              <h4 className="mt-4 text-lg font-semibold">Jane Doe</h4>
+              <h4 className="mt-4 text-lg font-semibold">M Abdur Rabbi Tota</h4>
               <p className="text-gray-500">UI/UX Designer</p>
             </div>
             <div className="bg-white shadow-md rounded-xl p-6">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png"
+                src="/obidul.jpeg"
                 alt="Team member"
                 className="w-24 h-24 mx-auto rounded-full"
               />
-              <h4 className="mt-4 text-lg font-semibold">John Smith</h4>
+              <h4 className="mt-4 text-lg font-semibold">Obidul Hasan</h4>
+              <p className="text-gray-500">AI Engineer</p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6">
+              <img
+                src="/deb.jpeg"
+                alt="Team member"
+                className="w-24 h-24 mx-auto rounded-full"
+              />
+              <h4 className="mt-4 text-lg font-semibold">Debjyoti Das</h4>
               <p className="text-gray-500">AI Engineer</p>
             </div>
           </div>
