@@ -56,13 +56,13 @@ function Login() {
               placeholder="Enter your email"
               value={email} onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 rounded-md bg-[#f9f9f9] border border-gray-700 
-                          focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black"
             />
           </div>
 
           {/* Password */}
           <div>
-            <label className="block text-sm mb-1 text-indigo-600" htmlFor="password">
+            <label className="block text-sm mb-1 text-black" htmlFor="password">
               Password
             </label>
             <input
