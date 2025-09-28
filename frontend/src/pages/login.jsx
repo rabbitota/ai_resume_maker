@@ -36,10 +36,10 @@ function Login() {
 
 
   return (
-    <div className="bg-[#ffffff] flex items-center justify-center min-h-screen text-white">
-      <div className="bg-[#F2F2F2] w-full max-w-md p-8 rounded-lg shadow-lg">
+    <div className="bg-[#2780F5] flex items-center justify-center min-h-screen text-white">
+      <div className="bg-[#F527A3] w-full max-w-md p-8 rounded-lg shadow-lg">
         {/* Title */}
-        <h2 className="text-2xl font-semibold text-center mb-6 text-indigo-600" >
+        <h2 className="text-2xl font-semibold text-center mb-6">
           Sign in to your account
         </h2>
 
@@ -47,7 +47,7 @@ function Login() {
         <form className="space-y-5" onSubmit={handleSubmit}>
           {/* Email */}
           <div>
-            <label className="block text-sm mb-1 text-indigo-600" htmlFor="email">
+            <label className="block text-sm mb-1" htmlFor="email">
               Email address
             </label>
             <input
@@ -55,14 +55,14 @@ function Login() {
               type="email"
               placeholder="Enter your email"
               value={email} onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 rounded-md bg-[#f9f9f9] border border-gray-700 
-                          focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black"
+              className="w-full px-4 py-2 rounded-md bg-[#1e293b] border border-gray-700 
+                          focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           {/* Password */}
           <div>
-            <label className="block text-sm mb-1 text-black" htmlFor="password">
+            <label className="block text-sm mb-1" htmlFor="password">
               Password
             </label>
             <input
@@ -70,8 +70,8 @@ function Login() {
               type="password"
               placeholder="Enter your password"
               value={password} onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 rounded-md bg-[#f9f9f9] border border-gray-700 
-                          focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black"
+              className="w-full px-4 py-2 rounded-md bg-[#1e293b] border border-gray-700 
+                          focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
@@ -80,9 +80,9 @@ function Login() {
             <label className="flex items-center gap-2">
               <input
                 type="checkbox"
-                className="rounded bg-gray-700 border-gray-600 "
+                className="rounded bg-gray-700 border-gray-600"
               />
-              <p className="text-indigo-600"> Remember me</p>
+              Remember me
             </label>
             <a href="#" className="text-indigo-400 hover:underline">
               Forgot password?

@@ -22,16 +22,15 @@ createRoot(document.getElementById("root")).render(
       <Toaster />
       <Routes>
         <Route path="/" element={<Root />}>
-        <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
-          <Route path="" element={<Home1 />} />
+          <Route path="" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="contact" element={<Contact />} />
           <Route path="feature" element={<Feature />} />  
           <Route path="test" element={<Test />} />
-          
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="home1" element={<Home1 />} />
           <Route path="generate-resume" element={<GenerateResume />} />
         </Route>

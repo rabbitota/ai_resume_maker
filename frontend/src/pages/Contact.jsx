@@ -29,72 +29,18 @@ function Contact() {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-indigo-600 text-xl" />
-                <a href="mailto:shakibulislam0112@gmail.com" className="text-gray-700 hover:text-indigo-600">
-                  shakibulislam0112@gmail.com
-                </a>
-              </div>
-                
-              <div className="flex items-center space-x-4">
-                <FaPhoneAlt className="text-indigo-600 text-xl" />
-                <a href="tel:+8801538408538" className="text-gray-700 hover:text-indigo-600">
-                  01538408538
-                </a>
-                <p>Md. Shakibul Islam</p>
-              </div>
-
-              <br />
-
-              <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-indigo-600 text-xl" />
-                <a href="mailto:rabbetota@gmail.com" className="text-gray-700 hover:text-indigo-600">
-                  rabbetota@gmail.com
+                <a href="mailto:resumeai@gmail.com" className="text-gray-700 hover:text-indigo-600">
+                  resumeai@gmail.com
                 </a>
               </div>
 
               <div className="flex items-center space-x-4">
                 <FaPhoneAlt className="text-indigo-600 text-xl" />
-                <a href="tel:+8801320990811" className="text-gray-700 hover:text-indigo-600">
-                  +01320990811
-                </a>
-                <p>Abdur Rabbi Tota</p>
-              </div>
-
-              <br />
-
-              <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-indigo-600 text-xl" />
-                <a href="mailto:rowdradas2455@gmail.com" className="text-gray-700 hover:text-indigo-600">
-                  rowdradas2455@gmail.com
+                <a href="tel:+880123456789" className="text-gray-700 hover:text-indigo-600">
+                  +880 1234-567-89
                 </a>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <FaPhoneAlt className="text-indigo-600 text-xl" />
-                <a href="tel:+8801540128734" className="text-gray-700 hover:text-indigo-600">
-                  01540128734
-                </a>
-                <p>Devjyoti Das</p>
-              </div>
-
-              <br />
-
-
-              <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-indigo-600 text-xl" />
-                <a href="mailto:areyanemon45@gmail.com" className="text-gray-700 hover:text-indigo-600">
-                  areyanemon45@gmail.com
-                </a>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <FaPhoneAlt className="text-indigo-600 text-xl" />
-                <a href="tel:+8801820364445" className="text-gray-700 hover:text-indigo-600">
-                  01820364445
-                </a>
-                <p>Obidul Hasan</p>
-              </div>
-
-              <br />
               <div className="flex items-center space-x-4">
                 <FaWhatsapp className="text-green-600 text-xl" />
                 <a href="https://wa.me/880123456789" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-green-600">
@@ -104,7 +50,7 @@ function Contact() {
 
               <div className="flex items-center space-x-4">
                 <FaTelegram className="text-sky-500 text-xl" />
-                <a href="https://web.telegram.org/k/" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-sky-500">
+                <a href="https://t.me/yourtelegramid" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-sky-500">
                   Telegram
                 </a>
               </div>
@@ -168,7 +114,7 @@ function Contact() {
             {/* Shakibul */}
             <div className="bg-white shadow-md rounded-xl p-6 border-2 border-indigo-600">
               <img
-                src="/Shakibul.jpg"
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
                 alt="Shakibul"
                 className="w-24 h-24 mx-auto rounded-full"
               />
@@ -180,7 +126,7 @@ function Contact() {
             {/* Rabbi */}
             <div className="bg-white shadow-md rounded-xl p-6 border-2 border-indigo-600">
               <img
-                src="/tota.jpg"
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
                 alt="Rabbi"
                 className="w-24 h-24 mx-auto rounded-full"
               />
@@ -192,7 +138,7 @@ function Contact() {
             {/* Obidul */}
             <div className="bg-white shadow-md rounded-xl p-6">
               <img
-                src="/obidul.jpeg"
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png"
                 alt="Obidul"
                 className="w-24 h-24 mx-auto rounded-full"
               />
@@ -203,7 +149,7 @@ function Contact() {
             {/* Debjyoti */}
             <div className="bg-white shadow-md rounded-xl p-6">
               <img
-                src="/deb.jpeg"
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
                 alt="Debjyoti"
                 className="w-24 h-24 mx-auto rounded-full"
               />
