@@ -23,7 +23,7 @@ function About() {
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+            src="/sakibul.png"
             alt="Resume Illustration"
             className="w-full max-w-md mx-auto"
           />

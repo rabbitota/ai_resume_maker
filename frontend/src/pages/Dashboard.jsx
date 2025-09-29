@@ -1,12 +1,29 @@
 import React from "react";
 import { Menu, LogOut, FileText, LayoutDashboard, User, Settings } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+
+  const response=axios.get("http://localhost:8080/me", { withCredentials: true })
+    .then(res => console.log(res.data))
+    .catch(err => console.error(err));
+
+
+    const handleLogout = () => {
+      // You can also clear sessionStorage/localStorage here if you use them
+      alert("Logout successfully");
+      navigate("/login"); // Redirect to login page
+    };
+
+
+
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="hidden md:flex flex-col w-64 bg-white shadow-lg">
-        
         <nav className="flex-1 px-4 py-6 space-y-3">
           <a href="#" className="flex items-center space-x-2 text-gray-700 hover:text-indigo-600 font-medium">
             <LayoutDashboard className="w-5 h-5" />
@@ -25,8 +42,14 @@ export default function Dashboard() {
             <span>Settings</span>
           </a>
         </nav>
+
+        {/* Logout Button */}
         <div className="p-4 border-t">
-          <button className="flex items-center w-full justify-center bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg transition">
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="flex items-center w-full justify-center bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg transition"
+          >
             <LogOut className="w-5 h-5 mr-2" /> Logout
           </button>
         </div>
@@ -34,7 +57,6 @@ export default function Dashboard() {
 
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto">
-        {/* Top Navbar (mobile only) */}
         <div className="md:hidden flex items-center justify-between p-4 bg-white shadow">
           <h1 className="text-xl font-bold text-indigo-600">Dashboard</h1>
           <button>
@@ -44,7 +66,7 @@ export default function Dashboard() {
 
         {/* Dashboard Content */}
         <div className="p-6 space-y-6">
-          <h2 className="text-2xl font-bold text-gray-800">Welcome Back 👋</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Welcome Back {response.email}</h2>
 
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -76,3 +98,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

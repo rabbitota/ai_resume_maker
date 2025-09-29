@@ -64,10 +64,7 @@ function Home1() {
         <div className="flex justify-center">
           <div className="mt-6 space-x-4">
             <button onClick={() => navigate("/register")} className="px-6 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700">
-              Create Resume
-            </button>
-            <button className="px-6 py-3 bg-gray-200 text-gray-800 rounded-xl shadow hover:bg-gray-300">
-              Learn More
+              Sign Up
             </button>
           </div>
       </div>

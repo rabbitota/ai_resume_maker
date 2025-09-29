@@ -20,4 +20,8 @@ public class UserService {
     public boolean validateUser(String email, String password) {
         return userRepo.findByEmailAndPassword(email, password).isPresent();
     }
+
+    public UserTable getUserByEmail(String email) {
+        return userRepo.findByEmail(email).orElse(null);
+    }
 }
